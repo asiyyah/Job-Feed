@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Feed</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header class="fixed-header">
+        <div class="nav-content">
+          <div class="nav-left">
+            <div class="profile-combobox">
+              <div class="avatar">A</div>
+              <span class="name">John Doe</span>
+              <i data-lucide="chevron-down"></i>
+            </div>
+            <nav class="nav-links">
+              <a href="#" class="nav-link">Dashboard</a>
+              <a href="#" class="nav-link">Jobs</a>
+              <a href="#" class="nav-link">Applications</a>
+              <a href="#" class="nav-link">Interview Prep</a>
+              <a href="#" class="nav-link">Settings</a>
+            </nav>
+          </div>
+          <div class="nav-right">
+            <div class="search-bar">
+              <input type="text" placeholder="Search..." />
+            </div>
+            <button class="notification-btn">
+              <i data-lucide="bell"></i>
+            </button>
+            <div class="profile-avatar">J</div>
+          </div>
+        </div>
+      </header>
+
+      <!-- content -->
+      <div class="content">
+        <div class="heading">
+          <div class="text-container">
+            <h1>Job Feed</h1>
+            <p>Discover opportunities tailored to your profile.</p>
+          </div>
+          <div class="view-icons">
+            <button class="view-btn active">
+              <i data-lucide="list"></i>
+            </button>
+
+            <button class="view-btn disabled">
+              <i data-lucide="grid-3x3"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- tabs -->
+        <div class="tabs">
+          <button class="tab active">Best Matches</button>
+          <button class="tab">Saved Jobs</button>
+        </div>
+
+        <!-- Find Jobs -->
+        <div class="find-jobs">
+          <div class="find-container">
+            <div class="search-bar-content">
+              <input type="text" placeholder="Search jobs, companies.." />
+            </div>
+
+            <div class="cta">
+              <button class="btn-pri">Search</button>
+              <button class="btn-sec">Filter</button>
+            </div>
+          </div>
+
+          <div class="help-text">
+            <p>
+              Popular: Frontend Developer, Product Manager, Data Scientist, UX
+              Designer, etc.
+            </p>
+          </div>
+        </div>
+
+        <!-- Job Recommendations -->
+        <div class="job-recommendations">
+          <div class="job-list">
+            <div class="job-card">
+              <div class="job-card-header">
+                <div class="ai-match-row">
+                  <div class="ai-match">
+                    <span class="match-score">95% Match</span>
+                    <span class="recommendation-type">AI Match</span>
+                  </div>
+                  <div class="job-actions">
+                    <button class="view-details-btn">View Details</button>
+                    <button class="bookmark-btn">
+                      <i data-lucide="bookmark"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="job-info">
+                  <div class="company-logo">
+                    <img
+                      src="./assets/logo_numeral.png"
+                      alt="Company Logo"
+                    />
+                  </div>
+                  <div class="job-title-company">
+                    <h3>Frontend Developer</h3>
+                    <p>Numeral</p>
+                  </div>
+                </div>
+              </div>
+              <div class="job-summary">
+                <p>
+                  Join our team to build innovative web applications using React
+                  and modern frontend technologies.
+                </p>
+                <div class="tags">
+                  <span class="tag">React</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">CSS</span>
+                </div>
+              </div>
+              <div class="job-details">
+                <div class="detail-item">
+                  <span class="label">Contract:</span>
+                  <span>Full-time</span>
+                </div>
+                <div class="detail-item">
+                  <span class="label">Salary:</span>
+                  <span>$80k - $100k</span>
+                </div>
+                <div class="detail-item">
+                  <span class="label">Type:</span>
+                  <span>On-site</span>
+                </div>
+                <div class="detail-item">
+                  <span class="label">Posted:</span>
+                  <span>2 days ago</span>
+                </div>
+              </div>
+            </div>
+            <!-- job 2 -->
+             <div class="job-card">
+              <div class="job-card-header">
+                <div class="ai-match-row">
+                  <div class="ai-match">
+                    <span class="match-score">90% Match</span>
+                    <span class="recommendation-type">AI Match</span>
+                  </div>
+                  <div class="job-actions">
+                    <button class="view-details-btn">View Details</button>
+                    <button class="bookmark-btn">
+                      <i data-lucide="bookmark"></i>
+                    </button>
+                  </div>
+                </div>
+                <div class="job-info">
+                  <div class="company-logo">
+                    <img
+                      src="./assets/logo_confido.png"
+                      alt="Company Logo"
+                    />
+                  </div>
+                  <div class="job-title-company">
+                    <h3>Software Engineer</h3>
+                    <p>Confido</p>
+                  </div>
+                </div>
+              </div>
+              <!-- job summary -->
+              <div class="job-summary">
+                <p>
+                  Contribute to backend and frontend development across core product features. Collaborate with cross-functional teams to ship reliable, maintainable software. Experience with modern development tools and cloud environments is a plus.
+                </p>
+                <div class="tags">
+                  <span class="tag">Next.js</span>
+                  <span class="tag">React</span>
+                  <span class="tag">PostgrSQL</span>
+                  <span class="tag">AWS</span>
+                </div>
+              </div>
+              <!-- job details -->
+              <div class="job-details">
+                <div class="detail-item">
+                  <span class="label">Contract:</span>
+                  <span>Full-time</span>
+                </div>
+                <div class="detail-item">
+                  <span class="label">Salary:</span>
+                  <span>$100k - $140k</span>
+                </div>
+                <div class="detail-item">
+                  <span class="label">Type:</span>
+                  <span>Remote</span>
+                </div>
+                <div class="detail-item">
+                  <span class="label">Posted:</span>
+                  <span>12 hrs ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
