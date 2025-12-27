@@ -230,7 +230,7 @@ body {
 .view-btn {
   background: none;
   border: var(--border-100);
-  padding: var(--p-1) var(--p-2);
+  padding: var(--p-2);
   border-radius: var(--border-rounded);
   cursor: pointer;
   transition: all 0.2s;
@@ -256,9 +256,10 @@ body {
 .tabs {
   width: fit-content;
   display: flex;
-  gap: var(--gap-0);
+  gap: var(--gap-4);
   padding: var(--p-1);
   max-width: 1200px;
+  margin: 0 0 var(--p-4) 0;
   background-color: var(--secondary-color);
   border-radius: var(--border-lg);
 }
@@ -266,7 +267,7 @@ body {
 .tab {
   background: none;
   border: none;
-  padding: var(--p-15) var(--p-3);
+  padding: var(--p-3) var(--p-15);
   border-radius: var(--border-rounded);
   cursor: pointer;
   transition: all 0.2s;
@@ -289,7 +290,7 @@ body {
 
 .tab:hover:not(.active) {
   background: var(--background-muted);
-  color: var(--text-secondary);
+  color: var(--text-primary);
   font-size: var(--text-sm);
   line-height: var(--leading-5);
   font-family: "Geist", sans-serif;
@@ -300,7 +301,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--gap-1);
+  gap: var(--gap-2);
   align-self: stretch;
 }
 
@@ -348,158 +349,6 @@ body {
   font-family: "Geist", sans-serif;
 }
 
-.job-recommendations {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--gap-6);
-  align-items: flex-start;
-  align-self: stretch;
-  border: var(--border-100);
-  border-radius: var(--border-lg);
-  padding: var(--p-6);
-  max-width: 1200px;
-}
-
-.job-list {
-  display: flex;
-  flex-direction: column;
-  row-gap: var(--gap-6);
-  align-items: stretch;
-  align-self: stretch;
-
-  max-width: 1200px;
-}
-
-.job-card {
-  border: var(--border-50);
-  border-radius: var(--border-rounded);
-  padding: var(--p-4);
-  background: var(--background-primary);
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-4);
-}
-
-.job-card-header {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-4);
-}
-
-.ai-match-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.ai-match {
-  background: white;
-  color: var(--text-muted);
-  padding: var(--p-1) var(--p-2);
-  border-radius: var(--border-rounded);
-  font-size: 12px;
-  font-weight: 500;
-  border: var(--border-100);
-}
-
-.job-actions {
-  display: flex;
-  gap: var(--gap-2);
-}
-
-.view-details-btn {
-  padding: var(--p-1) var(--p-2);
-  border: var(--border-100);
-  border-radius: var(--border-rounded);
-  background: none;
-  cursor: pointer;
-  font-size: 12px;
-  font-family: "Geist", sans-serif;
-}
-
-.bookmark-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: var(--p-1);
-  border-radius: var(--border-rounded);
-  transition: background 0.2s;
-}
-
-.bookmark-btn:hover {
-  background: var(--background-muted);
-}
-
-.job-info {
-  display: flex;
-  align-items: center;
-  gap: var(--gap-3);
-}
-
-.company-logo img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-
-.job-title-company h3 {
-  margin: 0;
-  font-size: var(--text-base);
-  line-height: var(--leading-6);
-  color: var(--text-primary);
-  font-weight: 500;
-}
-
-.job-title-company p {
-  margin: var(--p-1) 0 0 0;
-  color: var(--text-secondary);
-  font-size: var(--text-sm);
-  line-height: var(--leading-5);
-}
-
-.job-summary {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-2);
-}
-
-.job-summary p {
-  font-size: var(--text-base);
-  line-height: var(--leading-6);
-  color: var(--text-secondary);
-}
-
-.tags {
-  display: flex;
-  gap: var(--gap-2);
-}
-
-.tag {
-  background: var(--background-muted);
-  padding: var(--p-05) var(--p-25);
-  border-radius: 9999px;
-  font-size: var(--text-xs);
-  line-height: var(--leading-4);
-  color: var(--text-secondary);
-  border: var(--border-100);
-}
-
-.job-details {
-  display: flex;
-  gap: var(--gap-4);
-  flex-wrap: wrap;
-}
-
-.detail-item {
-  font-size: 14px;
-  color: var(--text-secondary);
-}
-
-.detail-item .label {
-  font-weight: 500;
-  color: var(--text-primary);
-}
-
 .btn-sec {
   display: flex;
   padding: var(--p-2) var(--p-3);
@@ -513,10 +362,4 @@ body {
   font-size: var(--text-sm);
   line-height: var(--leading-5);
   font-family: "Geist", sans-serif;
-}
-
-.help-text p {
-  color: var(--text-secondary);
-  font-size: var(--text-sm);
-  line-height: var(--leading-5);
 }
