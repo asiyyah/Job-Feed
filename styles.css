@@ -259,7 +259,6 @@ body {
   gap: var(--gap-4);
   padding: var(--p-1);
   max-width: 1200px;
-  margin: 0 0 var(--p-4) 0;
   background-color: var(--secondary-color);
   border-radius: var(--border-lg);
 }
@@ -267,7 +266,7 @@ body {
 .tab {
   background: none;
   border: none;
-  padding: var(--p-3) var(--p-15);
+  padding: var(--p-15) var(--p-3);
   border-radius: var(--border-rounded);
   cursor: pointer;
   transition: all 0.2s;
